@@ -1,0 +1,19 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Martínez Fernández Marta	dummy	FRH	330	dummy	dummy
+Boyer Diana	dummy	FRH	330	dummy	dummy
+Ronchetti Mary	dummy	FRH	330	dummy	dummy
+Guise Kali	dummy	FRH	330	dummy	dummy
+Hardcastle Maggie	dummy	FRH	330	dummy	dummy
+Lentini Dominic	dummy	FRH	330	dummy	dummy
+Irving Carolyn	dummy	FRH	330	dummy	dummy
+Brais Hanako	dummy	FRH	330	dummy	dummy
+Falvey Hannah	dummy	FRH	330	dummy	dummy
+Reilly Julia	dummy	FRH	330	dummy	dummy
+Feigert William	dummy	FRH	330	dummy	dummy
+McCabe Maja	dummy	FRH	330	dummy	dummy
+Drouin Anthony	dummy	FRH	330	dummy	dummy
+Blazar Julie	dummy	FRH	330	dummy	dummy
+O'Donnell Evan	dummy	FRH	330	dummy	dummy
+Whitcomb Erin	dummy	FRH	330	dummy	dummy
+Dumont Michael	dummy	FRH	330	dummy	dummy
+Cress Lauren	dummy	FRH	330	dummy	dummy

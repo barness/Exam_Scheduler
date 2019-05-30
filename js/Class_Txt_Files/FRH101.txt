@@ -1,0 +1,12 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Wactor Alexandra	dummy	FRH	101	dummy	dummy
+Brown Jonathan	dummy	FRH	101	dummy	dummy
+O'Connell Brendan	dummy	FRH	101	dummy	dummy
+Qasim Maryum	dummy	FRH	101	dummy	dummy
+Thomas Trent	dummy	FRH	101	dummy	dummy
+Duong Andy	dummy	FRH	101	dummy	dummy
+Simpson Connor	dummy	FRH	101	dummy	dummy
+Aust Bailey	dummy	FRH	101	dummy	dummy
+Armata Amy	dummy	FRH	101	dummy	dummy
+Pradhan Abhijeet	dummy	FRH	101	dummy	dummy
+Kulluk Emir	dummy	FRH	101	dummy	dummy

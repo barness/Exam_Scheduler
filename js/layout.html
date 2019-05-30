@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Exam Scheduler</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- App JS and CSS -->
+    <script src="app.js"></script>
+    <link href="app.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="loader-container">
+      <div id="loader"></div>
+      <h5>Processing...</h5>
+    </div>
+    <main role="main" class="container" id="main-page">
+      <h1 style="margin-top: 50px">Final Exam Scheduler</h1>
+      <br>
+      <input type="file" id="upload" class="fileinput" multiple/>
+      <label for="upload" class="btn btn-primary"><span class="fa fa-upload" style="margin-right:10px"></span>Import files</label>
+      <span id="num-files" style="margin-left:5px"></span>
+      <!--<span class="btn btn-primary" id="test-btn">Test</span>-->
+      <!-- Drop-down Menu -->
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </button>
+        <div class="dropdown-menu">
+          <!-- Add file(s) -->
+          <input type="file" id="add-btn" class="fileinput" multiple/>
+          <label for="add-btn" class="btn btn-primary dropdown-item"><span class="fa fa-upload" style="margin-right:10px"></span>Add file(s)</label>
+          <div class="dropdown-divider"></div>
+          <!-- Save Current State -->
+          <button id="save-btn" type="button" class="btn btn-primary dropdown-item">
+            <span class="fa fa-download" style="margin-right:10px"></span>Save Draft
+          </button>
+          <!-- Load Previous Draft -->
+          <input type="file" id="load-btn" class="fileinput"/>
+          <label for="load-btn" class="dropdown-item"><span class="fa fa-repeat" style="margin-right:10px"></span>Load Draft</label>
+           <!-- <button id="load-btn" type="button" class="btn btn-primary ">
+            <span class="fa fa-repeat" style="margin-right:10px"></span>Load Draft
+          </button> -->
+          <div class="dropdown-divider"></div>
+          <!-- Export -->
+          <button id="export-btn" type="button" class="btn btn-primary dropdown-item">
+            <span class="fa fa-file" style="margin-right:10px"></span>Export
+          </button>
+          <div class="dropdown-divider"></div>
+          <!-- Settings, trigger modal -->
+          <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#exampleModalLong">
+            <span class="fa fa-cog" style="margin-right:10px"></span>Settings
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Settings</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <h5 class="card-title">General Settings</h5>
+                <form>
+                  <div class="form-group row">
+                    <div class="col-sm-4 col-form-label">
+                      <label for="term">Current Term</label>
+                    </div>
+                    <div class="col-sm-8">
+                      <input class="form-control" id="term" type="text" placeholder="Fall/Spring 20xx">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-4 col-form-label">
+                      <label for="senior-checkbox">Senior Priority</label>
+                    </div>
+                    <div class="col-sm-8">
+                      <label class="switch">
+                        <input class="form-control" id="senior-checkbox" type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Main body-->
+      <br><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Courses</h5>
+              <p class="card-text" id="num-course">0 course(s) to be scheduled</p>
+              <div class="dropzone" id="course-list">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Schedule</h5>
+              <div style="text-align:right; margin:-20px 0px 10px 0px">
+                <button class="btn btn-light" id="add-time-btn"><span class="fa fa-plus" style="margin-right:10px"></span>Add more time</button>
+              </div>
+              <div class="container" id="time-slot-container">
+                <div class="row time-row">
+                  <div class="col-sm-4">
+                    <div class="card time" id="slot1">
+                      <div class="card-body">
+                        <h5 class="card-title time-name" contenteditable="true"><span class="fa fa-edit" contenteditable="false"></span>Time 1</h5>
+                        <div class="dropzone"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="card time" id="slot2">
+                      <div class="card-body">
+                        <h5 class="card-title time-name" contenteditable="true"><span class="fa fa-edit" contenteditable="false"></span>Time 2</h5>
+                        <div class="dropzone"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="card time" id="slot3">
+                      <div class="card-body">
+                        <h5 class="card-title time-name" contenteditable="true"><span class="fa fa-edit" contenteditable="false"></span>Time 3</h5>
+                        <div class="dropzone"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row time-row">
+                  <div class="col-sm-4">
+                    <div class="card time" id="slot4">
+                      <div class="card-body">
+                        <h5 class="card-title time-name" contenteditable="true"><span class="fa fa-edit" contenteditable="false"></span>Time 4</h5>
+                        <div class="dropzone"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="card time" id="slot5">
+                      <div class="card-body">
+                        <h5 class="card-title time-name" contenteditable="true"><span class="fa fa-edit" contenteditable="false"></span>Time 5</h5>
+                        <div class="dropzone"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="card time" id="slot6">
+                      <div class="card-body">
+                        <h5 class="card-title time-name" contenteditable="true"><span class="fa fa-edit" contenteditable="false"></span>Time 6</h5>
+                        <div class="dropzone"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+</body>
+</html>

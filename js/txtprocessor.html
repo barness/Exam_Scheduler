@@ -1,0 +1,118 @@
+<input type="file" id="fileinput" multiple/>
+<button onclick="readAlltxt()">readAlltxt</button>
+<button onclick="createGraph(studentArray)">createGraph</button>
+<script>
+
+var contentArray = [];
+var studentArray = [];
+var graph = {};
+function readFiles(ev) {
+    // Retrieve all the files from the FileList object
+    var files = ev.target.files;
+    if (files) {
+        for (var i = 0, f; f = files[i]; i++) {
+            var reader = new FileReader();
+            reader.onload = (function (f) {
+              return function (e) {
+                var contents = e.target.result;
+                //console.log(contents);
+				contentArray.push(contents)
+              };
+            })(f);
+            reader.readAsText(f);
+        }
+    } else {
+        alert("Failed to load files");
+    }
+}
+
+
+//returns a list of course names and a list of student ID's
+function readTxt(index) {
+	lines = contentArray[index].trim().split("\n");
+	labels = lines[0].trim().split("\t");
+
+	for (var i = 0; i < labels.length; i++){
+        if(labels[i].includes("ID")){
+            id = i;
+		}
+        else if (labels[i].includes("SUB")){
+            sub = i;
+		}
+        else if (labels[i].includes("COURSE")){
+            num = i;
+		}
+	}
+
+	rec = lines[1].trim().split('\t')
+	courseName = rec[sub]+' '+rec[num];
+    studentList = []
+    studentList.push(rec[id])
+
+	if (lines.length < 3){
+        return studentList;
+	}
+
+    for (var k = 2; k < lines.length; k++){
+        rec = lines[k].trim().split('\t')
+        studentList.push(rec[id])
+	}
+
+    return [courseName, studentList]
+
+}
+
+function readAlltxt(){
+	for (var i = 0; i < contentArray.length; i++){
+		studentArray.push(readTxt(i))
+	}
+	//console.log(studentArray)
+	return studentArray;
+}
+
+
+// Create a graph of enrollment data
+
+function createGraph(){
+
+    // initiate a graph with each vertex is a course and
+    // there is an edge between two courses if they have the same student
+    for (var x = 0; x < studentArray.length; x++){
+		console.log(x)
+		course=studentArray[x][0]
+        graph[course] = []
+	}
+	console.log(graph)
+
+    // for each key(class) check every other key to find out if any students
+    // belong to two or more keys
+    for (var i = 0; i < studentArray.length -1; i++){
+        for (var k = i+1; k < studentArray.length; k++){
+            c1 = studentArray[i][0]
+            c2 = studentArray[k][0]
+            for (var j = 0; j < studentArray[i][1].length; j++){
+				s1 = studentArray[i][1][j]
+                for (var l = 0; l < studentArray[k][1].length; l++){
+					s2 = studentArray[k][1][l]
+                    //check if the students being considered are the same student
+                    //make sure that it isn't the exact same dictionary entry
+                    //(same student and class)
+
+                    if ((s1==s2) && !(graph[c1].includes(c2))){
+                        graph[c1].push(c2)
+                        graph[c2].push(c1)
+					}
+				}
+			}
+		}
+	}
+
+	console.log(graph)
+    return graph
+
+// return the degree of each vertex
+}
+
+document.getElementById('fileinput').addEventListener('change', readFiles, false);
+
+</script>

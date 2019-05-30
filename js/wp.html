@@ -1,0 +1,108 @@
+<h1>WP</h1>
+
+<script>
+var graph = {'ACC 101': ['ECO 248', 'FRH 101'], 'ARC 274': [],
+'ART 205': ['CHM 223'], 'ART 349': [], 'BIO 201': ['CHM 303'],
+'CHM 223': ['ART 205', 'ECO 248'], 'CHM 303': ['BIO 201'],
+'ECO 248': ['ACC 101', 'CHM 223', 'FRH 101'],
+'FRH 101': ['ACC 101', 'ECO 248'], 'ITL 101': [], 'MUS 130': [],
+'FRH 330': []}
+
+
+function graphToList(graph) {
+  var result = [];
+  for (var el in graph) {
+    result.push([el,graph[el]]);
+  }
+  return result
+}
+
+function Welsh_Powell(graph) {
+  var graph_list = graphToList(graph);
+  // sort the list by descending degree
+  graph_list.sort(function(a, b){return b[1].length - a[1].length});
+
+  // get the set of vertices in order
+  var V = []
+  for (var i=0, el; el=graph_list[i]; i++) {
+    V.push(el[0]);
+  }
+
+  // initiate result coloring dict, with vertices as keys
+  coloring = {}
+
+  // initiate the number of color_list
+  var count = 0
+
+  // traverse the list and color the graphics
+  for (var i=0, v; v=V[i]; i++){
+    // if the vertex has not been colored
+    if (typeof coloring[v] == "undefined") {
+      // assign the first available color
+      coloring[v] = count;
+      // increment the count of colors
+      count++;
+
+      // traverse the list V and assign the same colors to non-neighbors of v
+      for (var k=i+1, v_prime; v_prime=V[k]; k++) {
+        if ((typeof coloring[v_prime] == "undefined") && !(graph[v].includes(v_prime))) {
+          // check if any neighbor of v_prime is of the same color as v
+          // assume there is none (which means we could still color v_prime the same as v)
+          var flag = false;
+          // get all neighbors of v_prime
+          var neighbors = graph[v_prime];
+          // if a neighbor of v_prime has the same color as v, flag = True
+          for (var g=0, n; n=neighbors[g]; g++){
+            if ((typeof coloring[n] != "undefined") && (coloring[n]==coloring[v])) {
+              flag = true;
+            }
+          }
+          // if v_prime doesn't have any neighbor of the same color as v
+          // color v_prime as v
+          if ( flag==false ){
+            coloring[v_prime] = coloring[v];
+          }
+        }
+      }
+    }
+  }
+  console.log(coloring);
+  return coloring;
+}
+
+function schedule(graph, cb){
+  var free = [];
+  var V = Object.keys(graph);
+  for (var i=0, v; v=V[i]; i++){
+    if(graph[v].length==0) {
+      free.push(v);
+      delete graph[v];
+    }
+  }
+  coloring = Welsh_Powell(graph);
+  console.log(coloring, free);
+  blocks = cb(coloring);
+  return blocks, free
+}
+
+function blocks(coloring){
+  coloring_list = graphToList(coloring);
+  coloring_list.sort(function(a, b){return a[1] - b[1]});
+  console.log(coloring_list);
+  dict = {};
+  c = coloring_list[0][1];
+  for (var i=0, el; el = coloring_list[i]; i++){
+    if (el[1] != c){
+      c = el[1];
+    }
+    if (typeof dict[c] == "undefined"){
+      dict[c] = [];
+    }
+    dict[c].push(el[0])
+  }
+  console.log(dict);
+  return dict;
+}
+
+schedule(graph, blocks)
+</script>

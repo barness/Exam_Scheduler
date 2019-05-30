@@ -1,0 +1,19 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Leale Caitlin	dummy	ITL	101	dummy	dummy
+Ifill Kaison	dummy	ITL	101	dummy	dummy
+Dougherty Chelsea	dummy	ITL	101	dummy	dummy
+Weiss Margot	dummy	ITL	101	dummy	dummy
+Granger Dylan	dummy	ITL	101	dummy	dummy
+Torres Paula	dummy	ITL	101	dummy	dummy
+Bobrowicz Hanna	dummy	ITL	101	dummy	dummy
+Donovan Julianna	dummy	ITL	101	dummy	dummy
+Rucker Joanna	dummy	ITL	101	dummy	dummy
+Cazemajou Lara	dummy	ITL	101	dummy	dummy
+Albertoni Renzo	dummy	ITL	101	dummy	dummy
+Thistle Kaylin	dummy	ITL	101	dummy	dummy
+King Abby	dummy	ITL	101	dummy	dummy
+Freehill Casey	dummy	ITL	101	dummy	dummy
+Berry Elizabeth	dummy	ITL	101	dummy	dummy
+Gillis Brian	dummy	ITL	101	dummy	dummy
+Mancini Anthony	dummy	ITL	101	dummy	dummy
+Bagnoli Benjamin	dummy	ITL	101	dummy	dummy

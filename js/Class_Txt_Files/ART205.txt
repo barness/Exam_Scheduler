@@ -1,0 +1,11 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Hale Trevor	dummy	ART	205	dummy	dummy
+Schwartzbaum Rachel	dummy	ART	205	dummy	dummy
+Smith Erin	dummy	ART	205	dummy	dummy
+Van Riet Stephanie	dummy	ART	205	dummy	dummy
+Hancock-Cerutti Marian	dummy	ART	205	dummy	dummy
+McGoldrick Emmy	dummy	ART	205	dummy	dummy
+Rojas Lisamarie	dummy	ART	205	dummy	dummy
+Brown Abby	dummy	ART	205	dummy	dummy
+Smith Ellie	dummy	ART	205	dummy	dummy
+Chin Anna	dummy	ART	205	dummy	dummy

@@ -1,0 +1,17 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Kelleher Caroline	dummy	BIO	201	dummy	dummy
+White Emily	dummy	BIO	201	dummy	dummy
+Walz Jared	dummy	BIO	201	dummy	dummy
+Cress Stephan	dummy	BIO	201	dummy	dummy
+Raskin Meghan	dummy	BIO	201	dummy	dummy
+DeVinne Larkin	dummy	BIO	201	dummy	dummy
+Saperstein Alyson	dummy	BIO	201	dummy	dummy
+Sykes Haley	dummy	BIO	201	dummy	dummy
+Paratore Julia	dummy	BIO	201	dummy	dummy
+Bleck Anna	dummy	BIO	201	dummy	dummy
+Klepacki Marc	dummy	BIO	201	dummy	dummy
+Pereira Holly	dummy	BIO	201	dummy	dummy
+Cooney Jackie	dummy	BIO	201	dummy	dummy
+Tran Krystal	dummy	BIO	201	dummy	dummy
+Teixeira Victoria	dummy	BIO	201	dummy	dummy
+Gazaille Dan	dummy	BIO	201	dummy	dummy

@@ -1,0 +1,19 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Rhodin Alana	dummy	ART	349	dummy	dummy
+Fromson Julia	dummy	ART	349	dummy	dummy
+Asplundh Cheyanne	dummy	ART	349	dummy	dummy
+Porter Isaih	dummy	ART	349	dummy	dummy
+Pinckert Dylan	dummy	ART	349	dummy	dummy
+Montenegro Greg	dummy	ART	349	dummy	dummy
+Messier Lee	dummy	ART	349	dummy	dummy
+Peirce Rita	dummy	ART	349	dummy	dummy
+Pipes Kelsi	dummy	ART	349	dummy	dummy
+Nee Micaela	dummy	ART	349	dummy	dummy
+Wimer Alana	dummy	ART	349	dummy	dummy
+Adams Selena	dummy	ART	349	dummy	dummy
+Martinez Dovey	dummy	ART	349	dummy	dummy
+Camargo Lissett	dummy	ART	349	dummy	dummy
+Xue Sophie	dummy	ART	349	dummy	dummy
+Gawronski Emma	dummy	ART	349	dummy	dummy
+Robinson Isaiah	dummy	ART	349	dummy	dummy
+Pite Claire	dummy	ART	349	dummy	dummy

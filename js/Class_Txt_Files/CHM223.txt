@@ -1,0 +1,53 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Boldrick Julia	dummy	CHM	223	dummy	dummy
+Martin Erin	dummy	CHM	223	dummy	dummy
+Crocker Emily	dummy	CHM	223	dummy	dummy
+Hutt Vater Kian	dummy	CHM	223	dummy	dummy
+Baron Benjamin	dummy	CHM	223	dummy	dummy
+Lockwood Chris	dummy	CHM	223	dummy	dummy
+Baltazar Alexandra	dummy	CHM	223	dummy	dummy
+Cooper Hope	dummy	CHM	223	dummy	dummy
+Pierce Emily	dummy	CHM	223	dummy	dummy
+Cardenas Rocio	dummy	CHM	223	dummy	dummy
+D'Onofrio Michael	dummy	CHM	223	dummy	dummy
+Rosenthal SaraAnn	dummy	CHM	223	dummy	dummy
+Lamptey Ivana	dummy	CHM	223	dummy	dummy
+Bolt Kendra	dummy	CHM	223	dummy	dummy
+Handy Jonathan	dummy	CHM	223	dummy	dummy
+Rust Madison	dummy	CHM	223	dummy	dummy
+Tran Sydney	dummy	CHM	223	dummy	dummy
+Afshinnekoo Sabrina	dummy	CHM	223	dummy	dummy
+Schachtschneider Claire	dummy	CHM	223	dummy	dummy
+Heffrin Kirby	dummy	CHM	223	dummy	dummy
+Collins Shane	dummy	CHM	223	dummy	dummy
+Dinsmore Tristan	dummy	CHM	223	dummy	dummy
+Wilde Callahan	dummy	CHM	223	dummy	dummy
+Kosovsky Ian	dummy	CHM	223	dummy	dummy
+Lofgren Liam	dummy	CHM	223	dummy	dummy
+Minderjahn Caroline	dummy	CHM	223	dummy	dummy
+Oakley Josephine	dummy	CHM	223	dummy	dummy
+Strakosha Maria	dummy	CHM	223	dummy	dummy
+Temple Shyanne	dummy	CHM	223	dummy	dummy
+Morgan Courtney	dummy	CHM	223	dummy	dummy
+Smith Ellie	dummy	CHM	223	dummy	dummy
+Beloin Jacob	dummy	CHM	223	dummy	dummy
+Dee Jamie	dummy	CHM	223	dummy	dummy
+Torres Nunez Isis	dummy	CHM	223	dummy	dummy
+Jennings Tiara	dummy	CHM	223	dummy	dummy
+Li Vina	dummy	CHM	223	dummy	dummy
+Ferland Neil	dummy	CHM	223	dummy	dummy
+Weis Maya	dummy	CHM	223	dummy	dummy
+Redpath Laurence	dummy	CHM	223	dummy	dummy
+Caputo Vincent	dummy	CHM	223	dummy	dummy
+Gutheinz Emma	dummy	CHM	223	dummy	dummy
+Heim Claudia	dummy	CHM	223	dummy	dummy
+Ozoria Mariel	dummy	CHM	223	dummy	dummy
+Pinto Pereira Junior Marcus Vinicius	dummy	CHM	223	dummy	dummy
+Campbell Leah	dummy	CHM	223	dummy	dummy
+Cao Ting Lan	dummy	CHM	223	dummy	dummy
+Hunnewell Jessica	dummy	CHM	223	dummy	dummy
+Mensah Koko	dummy	CHM	223	dummy	dummy
+Tateyama Haruko	dummy	CHM	223	dummy	dummy
+Ma Yiyan	dummy	CHM	223	dummy	dummy
+Baskfield Alexandra	dummy	CHM	223	dummy	dummy
+Caprio Eliza	dummy	CHM	223	dummy	dummy

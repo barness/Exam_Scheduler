@@ -1,0 +1,35 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Suneby Emma	dummy	CHM	303	dummy	dummy
+Cackovic Paige	dummy	CHM	303	dummy	dummy
+White Emily	dummy	CHM	303	dummy	dummy
+Cress Stephan	dummy	CHM	303	dummy	dummy
+Elisman Katia	dummy	CHM	303	dummy	dummy
+Caouette Kylie	dummy	CHM	303	dummy	dummy
+Ivain Phoebe	dummy	CHM	303	dummy	dummy
+Alsamadisi Noah	dummy	CHM	303	dummy	dummy
+Norfleet John	dummy	CHM	303	dummy	dummy
+Warren Angelica	dummy	CHM	303	dummy	dummy
+Santana Franky	dummy	CHM	303	dummy	dummy
+Florentine Catherine	dummy	CHM	303	dummy	dummy
+McConaughey Cara	dummy	CHM	303	dummy	dummy
+Pfennig Sarah	dummy	CHM	303	dummy	dummy
+Chu Duc	dummy	CHM	303	dummy	dummy
+Pianucci Lauren	dummy	CHM	303	dummy	dummy
+Pereira Holly	dummy	CHM	303	dummy	dummy
+Pope Ethan	dummy	CHM	303	dummy	dummy
+Cooney Jackie	dummy	CHM	303	dummy	dummy
+Hummel Peri	dummy	CHM	303	dummy	dummy
+Durmus Sercan	dummy	CHM	303	dummy	dummy
+Liz Jimenez Mayrelys	dummy	CHM	303	dummy	dummy
+Manuel Shannon	dummy	CHM	303	dummy	dummy
+Tran Krystal	dummy	CHM	303	dummy	dummy
+Feingold Louie	dummy	CHM	303	dummy	dummy
+Glasser Rachel	dummy	CHM	303	dummy	dummy
+Paris Jonathan	dummy	CHM	303	dummy	dummy
+Teixeira Victoria	dummy	CHM	303	dummy	dummy
+Toohey Cameron	dummy	CHM	303	dummy	dummy
+Welcome Franceine	dummy	CHM	303	dummy	dummy
+Yeterian Haig	dummy	CHM	303	dummy	dummy
+Sullivan Lauren	dummy	CHM	303	dummy	dummy
+Caron Emily	dummy	CHM	303	dummy	dummy
+Arthaud Dylan	dummy	CHM	303	dummy	dummy

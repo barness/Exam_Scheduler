@@ -1,0 +1,26 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Cohen Miya	dummy	MUS	130	dummy	dummy
+Hubbard Josie	dummy	MUS	130	dummy	dummy
+O'Neill Oliver	dummy	MUS	130	dummy	dummy
+Salerno Ariel	dummy	MUS	130	dummy	dummy
+LaFlamme Gabby	dummy	MUS	130	dummy	dummy
+Maki Hannah	dummy	MUS	130	dummy	dummy
+Weik Emma	dummy	MUS	130	dummy	dummy
+Collins Becca	dummy	MUS	130	dummy	dummy
+Tomilson Sarah	dummy	MUS	130	dummy	dummy
+Suher Emily	dummy	MUS	130	dummy	dummy
+Teixeira Li Grace	dummy	MUS	130	dummy	dummy
+Goldberg Sarah	dummy	MUS	130	dummy	dummy
+MacNeill Maria	dummy	MUS	130	dummy	dummy
+Cowan Emily	dummy	MUS	130	dummy	dummy
+Marshall Peter	dummy	MUS	130	dummy	dummy
+Kim Emily	dummy	MUS	130	dummy	dummy
+VanDeusen Sara	dummy	MUS	130	dummy	dummy
+Flynn Andrew	dummy	MUS	130	dummy	dummy
+Farr Katherine	dummy	MUS	130	dummy	dummy
+Schmitt Abigail	dummy	MUS	130	dummy	dummy
+Coles Emma	dummy	MUS	130	dummy	dummy
+Lawler Sarah	dummy	MUS	130	dummy	dummy
+Martinian Aris	dummy	MUS	130	dummy	dummy
+Rivard Zachary	dummy	MUS	130	dummy	dummy
+Xu Jing	dummy	MUS	130	dummy	dummy

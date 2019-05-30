@@ -1,0 +1,3 @@
+PIDM_KEY	CRN_KEY	SUBJ_CODE	COURSE_NUMBER	SECTION_NUMBER	TERM_CODE_KEY
+Osuba Cesar	dummy	ARC	274	dummy	dummy
+Montera Rose	dummy	ARC	274	dummy	dummy
